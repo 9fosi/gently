@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Tiny5&display=swap');
+
+*{
+    font-family: Tiny5, sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #0b0b0f;
+    color: aliceblue;
+    text-align: center;
+}
+
+img{
+    padding-top: 30vh;
+    max-width: 30svh;
+}

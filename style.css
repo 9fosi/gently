@@ -2,17 +2,47 @@
 
 *{
     font-family: Zen Kaku Gothic New, sans-serif;
+    box-sizing: border-box;
 }
 
 body {
     margin: 0;
-    padding: 0;
-    background-color: #1b1e29;
+    min-height: 100vh;
+    min-height: 100dvh;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    padding: max(48px, env(safe-area-inset-top)) max(48px, env(safe-area-inset-right)) max(48px, env(safe-area-inset-bottom)) max(48px, env(safe-area-inset-left));
+    background-color: #1e242b;
     color: aliceblue;
-    text-align: center;
+    text-align: left;
+}
+
+a{
+    text-decoration: underline rgb(103, 133, 163);
+    color: aliceblue;
+}
+
+h1 {
+    margin: 0;
+    line-height: 1.2;
+}
+
+h4 {
+    margin: 0 0 4px;
+}
+
+p {
+    margin-top: 0;
 }
 
 img{
     padding-top: 30vh;
     max-width: 30svh;
+}
+
+@media (max-width: 600px) {
+    body {
+        padding-bottom: max(72px, calc(env(safe-area-inset-bottom) + 48px));
+    }
 }
